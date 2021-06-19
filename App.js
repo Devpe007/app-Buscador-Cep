@@ -26,6 +26,13 @@ export default function App() {
           <Text style={styles.buttonText}>Limpar</Text>
         </TouchableOpacity>
       </View>
+      <View style={styles.result}>
+        <Text style={styles.itemText}>CEP: 7900000</Text>
+        <Text style={styles.itemText}>Logradouro: Rua dos Devs</Text>
+        <Text style={styles.itemText}>Bairro: Centro</Text>
+        <Text style={styles.itemText}>Cidade: São Paulo</Text>
+        <Text style={styles.itemText}>Estado: SP</Text>
+      </View>
     </SafeAreaView>
   );
 };
@@ -65,5 +72,13 @@ const styles = StyleSheet.create({
   buttonText:{
     fontSize: 15,
     color: '#fff',
+  },
+  result:{
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  itemText:{
+    fontSize: 22,
   },
 });
